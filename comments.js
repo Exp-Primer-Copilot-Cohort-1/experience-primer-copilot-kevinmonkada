@@ -15,8 +15,3 @@ router.get('/', (req, res) => {
       res.status(500).end();
     });
 });
-
-//POST /comments
-router.post('/', (req, res) => {
-  db.Comment.create({
-    text: req.body.text,
